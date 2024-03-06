@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { LogOutIcon } from 'lucide-react';
+import { BoxesIcon, LogOutIcon } from 'lucide-react';
 import { asyncUnsetAuthUser } from '../states/authUser/action';
 
 export default function Header() {
@@ -17,7 +17,7 @@ export default function Header() {
         <nav className="flex items-center justify-between h-16 max-w-6xl mx-4 2xl:mx-auto">
           <h2 className="text-2xl font-semibold">
             <Link to="/">
-              Forum<span className="text-rose-500">App</span>
+              Forum <span className="text-rose-500">App</span> <BoxesIcon className="w-4 h-4" />
             </Link>
           </h2>
           {authUser ? (
