@@ -6,6 +6,14 @@ import api from '../../utils/api';
 
 import { asyncReceiveLeaderboards, receiveLeaderboardsActionCreator } from './action';
 
+/**
+ * skenario test
+ *
+ * - asyncReceiveLeaderboards thunk
+ *  - should dispatch action correctly when data fetching success
+ *  - should dispatch action and call alert(toast) correctly when data fetching failed
+ */
+
 const fakeLeaderboardsResponse = [
   {
     user: {

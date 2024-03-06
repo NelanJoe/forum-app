@@ -3,6 +3,13 @@ import { render, screen } from '@testing-library/react';
 
 import Leaderboard from './leaderboard';
 
+/**
+ * skenario testing
+ *
+ * - Leaderboard component
+ *   - should can get leaderboard data from component
+ */
+
 describe('Leaderboard component', () => {
   it('should can get leaderboard data from component', async () => {
     // Arrange

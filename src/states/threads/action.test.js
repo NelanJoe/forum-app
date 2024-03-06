@@ -4,6 +4,14 @@ import toast from 'react-hot-toast';
 import api from '../../utils/api';
 import { asyncReceiveThreads, receiveThreadsActionCreator } from './action';
 
+/**
+ * skenario test
+ *
+ * - asyncReceiveThreads thunk
+ *  - should dispatch action correctly when data fetching success
+ *  - should dispatch action and call alert correctly when data fetching failed
+ */
+
 const fakeThreadsResponse = [
   {
     id: 'thread-1',
@@ -47,7 +55,7 @@ describe('asyncReceiveThreads thunk', () => {
     expect(dispatch).toHaveBeenCalledWith(receiveThreadsActionCreator(fakeThreadsResponse));
   });
 
-  it('hould dispatch action and call alert correctly when data fetching failed', async () => {
+  it('should dispatch action and call alert correctly when data fetching failed', async () => {
     //  Arrange
     // Stub Implementation
     api.getAllThreads = () => Promise.reject(fakeErrorResponse);

@@ -2,6 +2,14 @@ import { describe, it, expect } from 'vitest';
 import leaderboardsReducer from './reducer';
 import { LEADERBOARDS_ACTION_TYPES } from './type';
 
+/**
+ * test scenario for leaderboardsReducer
+ *
+ * - leaderboardsReducer function
+ *  - should return the initial state when given by unknow action
+ *  - should return the leaderboards when given by leaderboards/RECEIVE_LEADERBOARDS action
+ */
+
 describe('leaderboardsReducer', () => {
   it('should return the initial state when given by unknow action', () => {
     // Arrange
@@ -15,7 +23,7 @@ describe('leaderboardsReducer', () => {
     expect(nextState).toEqual(initialState);
   });
 
-  it(`should return the leaderboards when given by ${LEADERBOARDS_ACTION_TYPES.RECEIVE_LEADERBOARDS}`, () => {
+  it(`should return the leaderboards when given by ${LEADERBOARDS_ACTION_TYPES.RECEIVE_LEADERBOARDS} action`, () => {
     // Arrange
     const initialState = [];
 

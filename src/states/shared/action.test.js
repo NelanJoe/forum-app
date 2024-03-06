@@ -8,6 +8,14 @@ import { asyncPopulateUsersAndThreads } from './action';
 import { receiveThreadsActionCreator } from '../threads/action';
 import { recieveUsersActionCreator } from '../users/action';
 
+/**
+ * skenario test
+ *
+ * - asyncReceiveLeaderboards thunk
+ *  - should dispatch action correctly when data fetching success
+ *  - should dispatch action and call alert(toast) correctly when data fetching failed
+ */
+
 const fakeThreadsResponse = [
   {
     id: 'thread-1',

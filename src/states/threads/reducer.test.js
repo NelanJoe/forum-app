@@ -2,6 +2,18 @@ import { describe, it, expect } from 'vitest';
 import threadsReducer from './reducer';
 import { THREADS_ACTION_TYPES } from './type';
 
+/**
+ * test scenario for threadsReducer
+ *
+ * - threadsReducer function
+ *  - should return the initial state when given by unknow action
+ *  - should return threads when given by threads/RECEIVE_THREADS action
+ *  - should return the threads with the new thread when given by threads/ADD_THREAD action
+ *  - should return the threads with the toggle up vote thread when given by threads/TOGGLE_UPVOTE_THREAD action
+ *  - should return the threads with the toggle neutral vote thread when given by threads/TOGGLE_NEUTRALVOTE_THREAD action
+ *  - should return the threads with the toggle down vote thread when given by threads/TOGGLE_DOWNRALVOTE_THREAD action
+ */
+
 describe('threadsReducer', () => {
   it('should return the initial state when given by unknow action', () => {
     // Arrange

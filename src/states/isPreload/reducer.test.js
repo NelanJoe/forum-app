@@ -3,6 +3,14 @@ import { describe, it, expect } from 'vitest';
 import isPreloadReducer from './reducer';
 import { IS_PRELOAD_ACTION_TYPES } from './type';
 
+/**
+ * test scenario for isPreloadReducer
+ *
+ * - isPreloadReducer function
+ *  - should return the initial state when given by unknow action
+ *  - should return the isPreload with value boolen when given by isPreload/SET_IS_PRELOAD action
+ */
+
 describe('isPreloadReducer', () => {
   it('should return the initial state when given by unknow action', () => {
     // Arrange

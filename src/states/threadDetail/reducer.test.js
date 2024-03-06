@@ -2,6 +2,21 @@ import { describe, it, expect } from 'vitest';
 import threadDetailReducer from './reducer';
 import { THREAD_DETAIL_ACTION_TYPES } from './type';
 
+/**
+ * test scenario for threadDetailReducer
+ *
+ * - threadDetailReducer function
+ *  - should return the initial state when given by unknow action
+ *  - should return thread when given by threadDetail/RECEIVE_THREAD_DETAIL action
+ *  - should return thread detail with new comment when given by threadDetail/ADD_COMMENT_THREAD_DETAIL action
+ *  - should return the thread detail with toggled up vote thread detail when given threadDetail/TOGGLE_UPVOTE_THREAD_DETAIL action
+ *  - should return the thread detail with toggled neutral vote thread detail when given threadDetail/TOGGLE_NEUTRALVOTE_THREAD_DETAIL action
+ *  - should return the thread detail with toggled down vote thread detail when given threadDetail/TOGGLE_DOWNVOTE_THREAD_DETAIL action
+ *  - should return the thread detail with toggled up vote comment thread detail when given threadDetail/TOGGLE_UPVOTE_COMMENT_THREAD_DETAIL action
+ *  - should return the thread detail with toggled neutral vote comment thread detail when given threadDetail/TOGGLE_NEUTRALVOTE_COMMENT_THREAD_DETAIL action
+ *  - should return the thread detail with toggled down vote comment thread detail when given threadDetail/TOGGLE_DOWNVOTE_COMMENT_THREAD_DETAIL action
+ */
+
 describe('threadDetailReducer', () => {
   it('should return the initial state when given by unknow action', () => {
     // Arrange
