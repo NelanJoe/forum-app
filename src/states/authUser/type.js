@@ -1,0 +1,4 @@
+export const AUTH_USER_ACTION_TYPES = {
+  SET_AUTH_USER: 'authUser/SET_AUTH_USER',
+  UNSET_AUTH_USER: 'authUser/UNSET_AUTH_USER',
+};
