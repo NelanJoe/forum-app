@@ -17,7 +17,10 @@ export default function Header() {
         <nav className="flex items-center justify-between h-16 max-w-6xl mx-4 2xl:mx-auto">
           <h2 className="text-2xl font-semibold">
             <Link to="/">
-              Forum <span className="text-rose-500">App</span> <BoxesIcon className="w-4 h-4" />
+              <div className="flex items-center gap-2">
+                Forum <span className="text-rose-500">App</span>
+                <BoxesIcon className="w-4 h-4" />
+              </div>
             </Link>
           </h2>
           {authUser ? (
