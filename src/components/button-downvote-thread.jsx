@@ -31,7 +31,7 @@ export default function ButtonDownVoteThread({ threadId, downVotesBy }) {
   );
 
   return (
-    <button type="button" aria-label="down-vote" onClick={onDownVote}>
+    <button type="button" title="down-vote" aria-label="down-vote" onClick={onDownVote}>
       <div className="flex flex-row items-center gap-2">
         {isLiked === true ? (
           <ThumbsDownIcon className="w-4 h-4 text-rose-500 fill-rose-500" />

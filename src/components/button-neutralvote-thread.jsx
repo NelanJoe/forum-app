@@ -34,7 +34,7 @@ export default function ButtonNeutralVoteThread({ threadId, upVotesBy, downVotes
   );
 
   return (
-    <button type="button" aria-label="neutral-vote" onClick={onNeutralVote}>
+    <button type="button" title="neutral-vote" aria-label="neutral-vote" onClick={onNeutralVote}>
       <div className="flex flex-row items-center gap-2">
         {isNeutralVote ? <SmileIcon className="w-4 h-4 text-yellow-500" /> : <MehIcon className="w-4 h-4" />}
       </div>

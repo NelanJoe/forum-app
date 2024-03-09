@@ -31,7 +31,7 @@ export default function ButtonUpVoteThread({ threadId, upVotesBy }) {
   );
 
   return (
-    <button type="button" aria-label="up-vote" onClick={onUpVote}>
+    <button type="button" title="up-vote" aria-label="up-vote" onClick={onUpVote}>
       <div className="flex flex-row items-center gap-2">
         {isLiked === true ? (
           <ThumbsUpIcon className="w-4 h-4 text-green-500 fill-green-500" />
